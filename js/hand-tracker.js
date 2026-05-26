@@ -1,4 +1,4 @@
-import { HandLandmarker, FilesetResolver } from "https://unpkg.com/@mediapipe/tasks-vision@0.10.18/vision_bundle.mjs";
+import { HandLandmarker, FilesetResolver } from "./vision_bundle.mjs";
 
 export class HandTracker {
   constructor(videoElement, onResults) {
@@ -13,7 +13,7 @@ export class HandTracker {
 
   async init() {
     const vision = await FilesetResolver.forVisionTasks(
-      "https://unpkg.com/@mediapipe/tasks-vision@0.10.18/wasm"
+      "./wasm"
     );
 
     this.handLandmarker = await HandLandmarker.createFromOptions(vision, {
