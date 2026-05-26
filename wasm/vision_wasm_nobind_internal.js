@@ -1,0 +1,1 @@
+{"error":"[NOT_FOUND] File @mediapipe/tasks-vision@0.10.18/wasm/vision_wasm_nobind_internal.js not found"}
